@@ -1,0 +1,99 @@
+shanepes babayev
+
+dizi = ["Ali", "Eren", "Burak"]
+
+def betik(listem):
+    try:
+        sayac = 0
+        while True:
+            x = listem[sayac]
+            # print(sayac)
+            sayac += 1
+    except IndexError:
+        print(sayac)
+
+betik(dizi)
+
+----------------------------------
+from main import betik
+dizi2=['ali','veli','hasan','damla']
+betik(dizi2)
+----------------------------------
+dizi = ["Ali", "Eren", "Burak", "hasan"]
+#dizi2=['ali','veli','hasan','damla', 'sıla']
+def betik(listem):
+    try:
+        sayac = 0
+        while True:
+            x = listem[sayac]
+            # print(sayac)
+            sayac += 1
+    except:
+        pass
+    return sayac
+
+def trade(deger):
+    if deger>3:
+        print('Alındı')
+    elif deger>7:
+        print('satıldı')
+    else:
+        print('pozisyonu koru')
+
+betik(dizi)
+#betik(dizi2)
+
+
+
+
+------------------------------------
+from main import *
+diziler=[
+['ali','veli','hasan','damla', 'sıla''ali','veli','hasan','damla', 'sıla'],
+['ali','veli','hasan','veli','hasan','damla', 'sıla'],
+['ali','veli','hasan','damla', 'sıla''ali','veli'],
+['ali','veli','hasan','damla', 'sıla''ali','veli','hasan','damla']
+]
+for i in diziler:
+    rsi = betik(i)
+    trade(rsi)
+-------------------------------------
+from main import *
+diziler=[
+['ali','veli','hasan','damla', 'sıla''ali','veli','hasan','damla', 'sıla'],
+['ali','veli','hasan','veli','hasan','damla', 'sıla'],
+['ali','veli','hasan','damla', 'sıla''ali','veli'],
+['ali','veli','hasan','damla', 'sıla''ali','veli','hasan','damla']
+]
+for i in diziler:
+    rsi = betik(i)
+    trade(rsi)
+
+import random
+while True:
+     r=random.randint(1.100)
+     trade(r)
+yazı-tura
+
+import random
+
+r = random.random()
+print(r)
+
+if r > 0.5:
+    print('tura')
+else:
+    print('yazı')
+
+
+zar / çift-tek / takım kazanma
+
+import random
+
+r = random.randint(1, 6)
+print(r)
+
+if r % 2 == 0:
+    print('gs kazandı')
+else:
+    print('Fener kazandı')
