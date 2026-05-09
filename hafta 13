@@ -1,0 +1,44 @@
+#1ornek
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+<p id="demo">JavaScript can change HTML content.</p>
+<p id="demo">In this case JavaScript changes the value of the
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'merhaba betık'">yazıyı degıstir</button>
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>
+
+#2ornek
+car=['ali', 'mehmet', 'veli']
+for(let i=0; i<car.length; i++){console.log(car[i]); alert(i);}
+
+functıon foo(a,b){
+return a+b;
+}
+foo(3,5)
+
+
+a=prompt('isim gir');
+if (a==Muhammet){
+    for (let i = 0; i<a.length; i++) {
+alert(a[i]);
+else if (a==yusuf){
+        var str=''; 
+for(i=0; i<a.length; i++){
+str=str+a[i];
+alert(str);
+    else{alert('dogru gir');}}
+        
+    
