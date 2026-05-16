@@ -30,15 +30,21 @@ return a+b;
 foo(3,5)
 
 
-a=prompt('isim gir');
-if (a==Muhammet){
-    for (let i = 0; i<a.length; i++) {
-alert(a[i]);
-else if (a==yusuf){
-        var str=''; 
-for(i=0; i<a.length; i++){
-str=str+a[i];
-alert(str);
-    else{alert('dogru gir');}}
+let a = prompt('isim gir');
+if (a == 'Muhammet') {
+    for (let i = 0; i < a.length; i++) {
+        alert(a[i]);
+    }
+}
+else if (a == 'yusuf') {
+    let str = '';
+    for (let i = 0; i < a.length; i++) {
+        str = str + a[i];
+        alert(str);
+    }
+}
+else {
+    alert('dogru gir');
+}
         
     
