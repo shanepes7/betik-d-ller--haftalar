@@ -1,0 +1,22 @@
+import random
+kurban_listesi=[]
+kurtulanlar=[]
+infaz_edilen=""
+for i in range(6):
+ sec=input('secılecek mahkumun ismını oku')
+ print("{} sahneye cıkarıldı".format(sec))
+kurban_listesi.append(sec)
+silah_patladı=0
+sayac=1
+r = random.randint(1,6)
+print("ss subayı sılahını cıkardı ve rus ruletı ıcın hazırladı")
+while silah_patladı==False:
+
+  if sayac==r:
+     print("boom......{}. kısı oldu".format(sayac))
+     silah_patladı=True
+     infaz_edilen=kurban_listesi[sayac-1]
+  else:
+     print("tıkkk {}.kısı kurtuldu  sıra {}. kısıde".format(sayac))
+     sayac=sayac+1
+
