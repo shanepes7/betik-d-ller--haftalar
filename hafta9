@@ -1,0 +1,25 @@
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://www.milligazete.com.tr/"
+
+headers = {
+    "User-Agent": "Mozilla/5.0"
+}
+
+r = requests.get(url, headers=headers)
+soup = BeautifulSoup(r.text, "html.parser")
+
+links = set()
+
+for a in soup.find_all("a", href=True):
+    href = a["href"]
+
+    if href.startswith("/"):
+        href = "https://www.milligazete.com.tr" + href
+
+    if "milligazete.com.tr" in href:
+        links.add(href)
+
+for link in sorted(links):
+    print(link)
